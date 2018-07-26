@@ -5,6 +5,12 @@ const blockTxt = document.getElementById('block-txt');
 
 let block = 1;
 
+const todayDate = () => {
+  let today = new Date();
+  let utcDate = today.toUTCString();
+  return utcDate;
+}
+
 document.getElementById('date').innerHTML = todayDate();
 
 const addBlock = () => {
