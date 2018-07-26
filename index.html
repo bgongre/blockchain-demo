@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="">
+  <script src="particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Blockchain Demo</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <h1>BLOCKCHAIN</h1>
+
+  <div class="">
+    <button id='add-button' type="button" name="button">add block</button>
+  </div>
+
+  <div class='container'>
+    <div id="box-wrapper">
+      <div class="box">
+        <div class="block-box">
+          <button class='data-button' type="button" name="data">DATA</button><input id='data-input' type="text" name="data" value="" placeholder="Enter Text To Encrypt">
+          <p id='nonce'>Nonce</p>
+          <p id='p-hash'>Previous Hash</p>
+          <p id='hash'>Hash <input id='hash-info' type="text" name="hash" value="" disabled></p>
+          <h3 id='block-txt'>Genesis Block</h3>
+          <button class='mine-button'><i class="fas fa-wrench fa-md"></i></button>
+          <h6 id='date'></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src='script.js'></script>
+</body>
+
+</html>

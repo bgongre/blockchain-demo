@@ -1,0 +1,123 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.background {
+  background-color: #f9f9fb;
+  background: cornflowerblue;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#particles canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+#box-wrapper {
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 25px;
+  position: relative;
+  display: block;
+  width: 25%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* .block-box::before {
+  position: absolute;
+  z-index: 1;
+}
+
+.box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover::after {
+    opacity: 1;
+} */
+
+p {
+  font-size: 12px;
+}
+
+button {
+  text-transform: uppercase;
+  border-radius: 2px 2px;
+  height: 26px;
+  padding: 5px 15px;
+  border: 1px solid #d9d9d9;
+  background-color: #f2f2f2;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.data-button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 26px;
+  padding: 5px 15px;
+}
+
+.mine-button {
+  display: block;
+  float: right;
+  margin-right: 25px;
+  border-radius: 25px;
+}
+
+#data-input {
+  width: 80%;
+  height: 22px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  border: 1px solid #d9d9d9;
+}
+
+#hash-info {
+  padding-left: 2px;
+  width: 87%;
+  height: 22px;
+  border-radius: 5px;
+  outline: none;
+  color: #52c41a;
+  border: 1px solid #b7eb8f;
+  background-color: #f6ffed;
+}
+
+#date {
+  font-weight: 100;
+}
