@@ -121,3 +121,12 @@ button {
 #date {
   font-weight: 100;
 }
+
+#p-hash {
+  border-style: none;
+  background: #fff;
+  color: #52c41a;
+  width: 87%;
+  height: 22px;
+  font-size: 12px;
+}

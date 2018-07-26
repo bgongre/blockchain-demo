@@ -3,10 +3,10 @@ const mineButton = document.getElementById('mine-button');
 const blockTxt = document.getElementById('block-txt');
 const dataTxt = document.getElementById('data-input');
 const hashTxt = document.getElementById('hash-info');
-// const preHash = document.getElementById('p-hash');
+const prevHash = document.getElementById('p-hash');
 
-// var encrypted = CryptoJS.SHA256(dataTxt);
 let block = 1;
+prevHash.value = 0;
 
 let encryptArr = [];
 
@@ -26,8 +26,8 @@ const addBlock = () => {
 }
 
 const clearInputData = () => {
-  document.getElementById('data-input').value ='';
-  document.getElementById('hash-info').value = '';
+  dataTxt.value ='';
+  hashTxt.value = '';
 }
 
 const changeBlockNum = () => {
@@ -35,20 +35,24 @@ const changeBlockNum = () => {
 }
 
 const encryptData = (str) => {
-  let encryptedStr = CryptoJS.SHA256(str);
-  document.getElementById('hash-info').value = encryptedStr.toString();
-  encryptArr.push(encryptedStr);
+  str = dataTxt.value;
+  let encrypt = CryptoJS.SHA256(str);
+  let encryptStr = hashTxt.value = encrypt.toString();
+  encryptArr.push(encryptStr);
 }
 
-const setPreHash = () => {
-  document.getElementById('p-hash').value = encryptArr[0];
+let setPrevHash = () => {
+  prevHash.value = encryptArr[0];
 }
 
 mineButton.addEventListener('click', () => {
   encryptData();
+  console.log(encryptArr);
 })
 
 addButton.addEventListener('click',() => {
   addBlock();
+  clearInputData();
+  setPrevHash();
   changeBlockNum();
 })
