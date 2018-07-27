@@ -4,6 +4,8 @@ const blockTxt = document.getElementById('block-txt');
 const dataTxt = document.getElementById('data-input');
 const hashTxt = document.getElementById('hash-info');
 const prevHash = document.getElementById('p-hash');
+const nonce = document.getElementById('nonce-info');
+
 
 let block = 1;
 prevHash.value = 0;
@@ -28,6 +30,7 @@ const addBlock = () => {
 const clearInputData = () => {
   dataTxt.value ='';
   hashTxt.value = '';
+  nonce.value = '';
 }
 
 const changeBlockNum = () => {
@@ -41,6 +44,16 @@ const encryptData = (str) => {
   encryptArr.push(encryptStr);
 }
 
+const setNonce = () => {
+  let token ='';
+  const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (let i = 0; i < 2; i++){
+  token += possible.charCodeAt(Math.floor(Math.random() * possible.length));
+ }
+ nonce.value = token;
+}
+
 let getHash = () => {
   encryptArr[0] = hashTxt.value;
 }
@@ -52,6 +65,7 @@ let setPrevHash = () => {
 mineButton.addEventListener('click', () => {
   encryptData();
   getHash();
+  setNonce();
 })
 
 addButton.addEventListener('click',() => {
