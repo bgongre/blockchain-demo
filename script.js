@@ -41,13 +41,17 @@ const encryptData = (str) => {
   encryptArr.push(encryptStr);
 }
 
+let getHash = () => {
+  encryptArr[0] = hashTxt.value;
+}
+
 let setPrevHash = () => {
   prevHash.value = encryptArr[0];
 }
 
 mineButton.addEventListener('click', () => {
   encryptData();
-  console.log(encryptArr);
+  getHash();
 })
 
 addButton.addEventListener('click',() => {
