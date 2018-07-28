@@ -28,7 +28,7 @@ const addBlock = () => {
 }
 
 const clearInputData = () => {
-  dataTxt.value ='';
+  dataTxt.value = '';
   hashTxt.value = '';
   nonce.value = '';
 }
@@ -57,9 +57,9 @@ const calcNonce = () => {
   const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
   while (str.length < 4) {
-     str += possible.charCodeAt(Math.floor(Math.random() * possible.length));
- }
-   return str;
+    str += possible.charCodeAt(Math.floor(Math.random() * possible.length));
+  }
+  return str;
 }
 
 const setNonce = () => {
@@ -68,17 +68,17 @@ const setNonce = () => {
 
 const placeNonce = () => {
   nonce.value = nonceArr[0];
-  nonceArr.pop();
 }
 
 mineButton.addEventListener('click', () => {
   encryptData();
   getHash();
-  setNonce();
   placeNonce();
 })
 
-addButton.addEventListener('click',() => {
+dataTxt.addEventListener('input', setNonce);
+
+addButton.addEventListener('click', () => {
   addBlock();
   clearInputData();
   setPrevHash();
