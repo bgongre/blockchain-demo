@@ -6,11 +6,11 @@ const hashTxt = document.getElementById('hash-info');
 const prevHash = document.getElementById('p-hash');
 const nonce = document.getElementById('nonce-info');
 
-
 let block = 1;
 prevHash.value = 0;
 
 let encryptArr = [];
+let nonceArr = [];
 
 const todayDate = () => {
   let today = new Date();
@@ -44,28 +44,38 @@ const encryptData = (str) => {
   encryptArr.push(encryptStr);
 }
 
-const setNonce = () => {
-  let token ='';
-  const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-  for (let i = 0; i < 2; i++){
-  token += possible.charCodeAt(Math.floor(Math.random() * possible.length));
- }
- nonce.value = token;
-}
-
-let getHash = () => {
+const getHash = () => {
   encryptArr[0] = hashTxt.value;
 }
 
-let setPrevHash = () => {
+const setPrevHash = () => {
   prevHash.value = encryptArr[0];
+}
+
+const calcNonce = () => {
+  str = '';
+  const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  while (str.length < 4) {
+     str += possible.charCodeAt(Math.floor(Math.random() * possible.length));
+ }
+   return str;
+}
+
+const setNonce = () => {
+  nonceArr[0] = calcNonce();
+}
+
+const placeNonce = () => {
+  nonce.value = nonceArr[0];
+  nonceArr.pop();
 }
 
 mineButton.addEventListener('click', () => {
   encryptData();
   getHash();
   setNonce();
+  placeNonce();
 })
 
 addButton.addEventListener('click',() => {

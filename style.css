@@ -89,6 +89,7 @@ button {
   border-bottom-left-radius: 5px;
   height: 26px;
   padding: 5px 15px;
+  color: #000;
 }
 
 .mine-button {
