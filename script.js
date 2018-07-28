@@ -7,6 +7,7 @@ const prevHash = document.getElementById('p-hash');
 const nonce = document.getElementById('nonce-info');
 
 let block = 1;
+nonce.value = 305404;
 prevHash.value = 0;
 
 let encryptArr = [];
