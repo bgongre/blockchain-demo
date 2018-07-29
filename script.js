@@ -7,11 +7,11 @@ const prevHash = document.getElementById('p-hash');
 const nonce = document.getElementById('nonce-info');
 
 let block = 1;
-nonce.value = 305404;
 prevHash.value = 0;
 
 let encryptArr = [];
 let nonceArr = [];
+nonceArr[0] = 2345;
 
 const todayDate = () => {
   let today = new Date();
@@ -72,9 +72,9 @@ const placeNonce = () => {
 }
 
 mineButton.addEventListener('click', () => {
-  encryptData();
-  getHash();
-  placeNonce();
+    encryptData();
+    getHash();
+    placeNonce();
 })
 
 dataTxt.addEventListener('input', setNonce);
@@ -84,4 +84,5 @@ addButton.addEventListener('click', () => {
   clearInputData();
   setPrevHash();
   changeBlockNum();
+  setNonce();
 })

@@ -130,3 +130,12 @@ button {
   height: 22px;
   font-size: 12px;
 }
+
+#nonce-info {
+  border-style: none;
+  background: #fff;
+  color: #000;
+  width: 87%;
+  height: 22px;
+  font-size: 12px;
+}
