@@ -25,11 +25,11 @@ html, body {
 #box-wrapper {
   text-transform: uppercase;
   text-align: left;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-left: 25px;
   position: relative;
   display: inline-block;
-  width: 25%;
+  width: 35%;
   height: 50%;
   background-color: #fff;
   border-radius: 5px;
@@ -90,6 +90,7 @@ button {
 }
 
 #data-input {
+  font-size: 18px;
   width: 80%;
   height: 22px;
   border-top-right-radius: 5px;
@@ -100,6 +101,7 @@ button {
 
 #hash-info {
   padding-left: 2px;
+  font-size: 18px;
   width: 87%;
   height: 22px;
   border-radius: 5px;
@@ -119,7 +121,7 @@ button {
   color: #52c41a;
   width: 87%;
   height: 22px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 #nonce-info {
