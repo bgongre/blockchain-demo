@@ -6,6 +6,14 @@ const hashTxt = document.getElementById('hash-info');
 const prevHash = document.getElementById('p-hash');
 const nonce = document.getElementById('nonce-info');
 
+window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    color: ['#DA0463', '#404B69', '#DBEDF3'],
+    connectParticles: true
+  });
+};
+
 let block = 1;
 prevHash.value = 0;
 
@@ -22,9 +30,9 @@ const todayDate = () => {
 document.getElementById('date').innerHTML = todayDate();
 
 const addBlock = () => {
-  let itm = document.getElementById('box-wrapper');
-  let clone = itm.cloneNode(true);
-  itm.parentNode.insertBefore(clone, itm.nextSibling);
+  let block = document.getElementById('box-wrapper');
+  let clone = block.cloneNode(true);
+  block.parentNode.insertBefore(clone, block.nextSibling);
   clearInputData();
 }
 
