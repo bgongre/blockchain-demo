@@ -90,7 +90,7 @@ button {
 }
 
 #data-input {
-  font-size: 18px;
+  font-size: 15px;
   width: 80%;
   height: 22px;
   border-top-right-radius: 5px;
@@ -101,7 +101,7 @@ button {
 
 #hash-info {
   padding-left: 2px;
-  font-size: 18px;
+  font-size: 15px;
   width: 87%;
   height: 22px;
   border-radius: 5px;
@@ -121,7 +121,7 @@ button {
   color: #52c41a;
   width: 87%;
   height: 22px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #nonce-info {
