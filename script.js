@@ -5,6 +5,7 @@ const dataTxt = document.getElementById('data-input');
 const hashTxt = document.getElementById('hash-info');
 const prevHash = document.getElementById('p-hash');
 const nonce = document.getElementById('nonce-info');
+const date = document.getElementById('date');
 
 
 window.onload = function() {
@@ -29,7 +30,11 @@ const todayDate = () => {
   return utcDate;
 }
 
-document.getElementById('date').innerHTML = todayDate();
+const setDate = () => {
+  date.innerHTML = todayDate();
+}
+
+setDate();
 
 const addBlock = () => {
   let block = document.getElementById('box-wrapper');
@@ -94,5 +99,6 @@ addButton.addEventListener('click', () => {
   clearInputData();
   setPrevHash();
   changeBlockNum();
+  setDate();
   setNonce();
 })
