@@ -5,6 +5,7 @@ const dataTxt = document.getElementById('data-input');
 const hashTxt = document.getElementById('hash-info');
 const prevHash = document.getElementById('p-hash');
 const nonce = document.getElementById('nonce-info');
+const allInput = document.querySelectorAll('input[type=text]');
 const date = document.getElementById('date');
 
 
@@ -86,6 +87,10 @@ const placeNonce = () => {
   nonce.value = nonceArr[0];
 }
 
+const disableInput = () => {
+  allInput.disabled = true;
+}
+
 mineButton.addEventListener('click', () => {
     encryptData();
     getHash();
@@ -101,4 +106,5 @@ addButton.addEventListener('click', () => {
   changeBlockNum();
   setDate();
   setNonce();
+  disableInput();
 })
