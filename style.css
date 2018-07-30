@@ -28,7 +28,7 @@ html, body {
   padding-top: 15px;
   padding-left: 25px;
   position: relative;
-  display: block;
+  display: inline-block;
   width: 25%;
   height: 50%;
   background-color: #fff;
@@ -54,6 +54,7 @@ html, body {
 
 .box:hover::after {
     opacity: 1;
+    z-index: 1;
 }
 
 p {
@@ -85,7 +86,7 @@ button {
   border-radius: 25px;
 }
 
-#mine-button: hover {
+#mine-button:hover {
   background-color: #e0e0e0;
 }
 

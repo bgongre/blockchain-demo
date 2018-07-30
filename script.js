@@ -6,10 +6,11 @@ const hashTxt = document.getElementById('hash-info');
 const prevHash = document.getElementById('p-hash');
 const nonce = document.getElementById('nonce-info');
 
-window.onload = function() {
+window.onload = () => {
   Particles.init({
     selector: '.background',
-    color: ['#DA0463', '#404B69', '#DBEDF3'],
+    maxParticles: 100,
+    color: ['#DA0463', '#69ffb9', '#76ecfb', '	#c1fda0', '#9386e6', '#f298f4'],
     connectParticles: true
   });
 };
