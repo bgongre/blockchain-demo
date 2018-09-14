@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Blockchain Demonstration">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Brittani Gongre">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -10,22 +14,35 @@
 </head>
 
 <body>
-
-
-  <h1>BLOCKCHAIN</h1>
+  <header>
+    <h1>BLOCKCHAIN</h1>
+  </header>
 
   <div class="">
     <button id='add-button' type="button" name="button">add block</button>
   </div>
 
+<section>
   <div class='container'>
     <div id="box-wrapper">
       <div class="box">
         <div class="block-box">
-          <button class='data-button' type="button" name="data" disabled>DATA</button><input id='data-input' type="text" name="data" value="" placeholder="Enter Text To Encrypt">
-          <p>Nonce <input id='nonce-info' type='text' name='nonce' value='' disabled></p>
-          <p>Previous Hash <input id='p-hash' type='text' name 'prevhash' value='' disabled></p>
-          <p>Hash <input id='hash-info' type="text" name="hash" value="" disabled></p>
+          <div class="flex-test">
+            <button class='data-button' type="button" name="data" disabled>DATA</button>
+            <input id='data-input' type="text" name="data" placeholder="Enter Text To Encrypt">
+          </div>
+          <div class="flex-test">
+            <p class="nonce-title">Nonce</p>
+            <input id='nonce-info' type='text' name='nonce' value='' disabled>
+          </div>
+          <div class="flex-test">
+              <p class="p-hash-text">Previous Hash</p>
+              <input id='p-hash' type='text' name 'prevhash' value='' disabled>
+            </div>
+          <div class="flex-test">
+              <p class="hash-title">Hash</p>
+              <input id='hash-info' type="text" name="hash" value="" disabled>
+          </div>
           <h3 id='block-txt'>Genesis Block</h3>
           <button id='mine-button'><i class="fas fa-wrench fa-md"></i></button>
           <h6 id='date'></h6>
@@ -33,6 +50,8 @@
       </div>
     </div>
   </div>
+</section>
+
 
 
 
