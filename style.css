@@ -34,7 +34,7 @@ html, body {
   padding-top: 25px;
   padding-left: 25px;
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 35%;
   height: 50%;
   background-color: #fff;
@@ -102,7 +102,7 @@ button {
 
 #data-input {
   font-size: 15px;
-  width: 80%;
+  width: 70%;
   height: 22px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -111,9 +111,10 @@ button {
 }
 
 #hash-info {
+  margin-top: 5px;
   padding-left: 2px;
   font-size: 15px;
-  width: 87%;
+  width: 70%;
   height: 22px;
   border-radius: 5px;
   outline: none;
@@ -136,10 +137,87 @@ button {
 }
 
 #nonce-info {
+  margin-top: 7px;
   border-style: none;
   background: #fff;
   color: #000;
   width: 87%;
   height: 22px;
   font-size: 12px;
+}
+
+.flex-test {
+  display: flex;
+  margin: 10px;
+}
+
+.nonce-title {
+  margin-right: 30px;
+}
+
+.hash-title {
+  line-height: 1.2rem;
+  margin-right: 35px;
+}
+
+.p-hash-text {
+  margin: 0;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  ul {margin: 0;}
+  .name {font-size: 50px;}
+  .name-box {padding-top:15vh;}
+  .introduction {padding: 60px 20px 50px !important;}
+  .below-fullscreen section ul.paragraphs li>p {padding-bottom: 10px;}
+  .skills-title {margin: 0 !important;}
+  .skills {padding: 60px 20px 50px !important;}
+  .inverted {padding-bottom: 100px !important}
+  .projects {width: 100% !important;}
+  .below-fullscreen section .row .project {width: 350px !important; padding: 0;}
+  .below-fullscreen section .row+.row {margin-top: 15px !important;}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  ul {margin: 0;}
+  .name {font-size: 50px;}
+  .name-box {padding-top:15vh;}
+  .introduction {padding: 60px 20px 50px !important;}
+  .below-fullscreen section ul.paragraphs li>p {padding-bottom: 10px;}
+  .skills-title {margin-bottom: 5% !important;}
+  .skills {padding: 60px 20px 50px !important;}
+  .inverted {padding-bottom: 100px !important}
+  .projects {width: 100% !important;}
+  .below-fullscreen section .row .project {width: 350px !important; padding: 0;}
+  .below-fullscreen section .row+.row {margin-top: 15px !important;}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  ul {margin: 0;}
+  .introduction {padding: 100px 20px 100px !important; margin: 0 10%;}
+  ul.skills {padding: 0 !important;}
+  .skills {padding: 100px 20px 100px !important; margin: 0 10%;}
+  .skills-title {padding-bottom: 50px !important;}
+  .projects {width: 100% !important;}
+  .below-fullscreen section .row .project {padding-left: 0 !important;}
+  .below-fullscreen section .row+.row {margin-top: 10px !important;}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  ul {margin: 0;}
+  .introduction {padding: 100px 20px 100px !important; margin: 0 20%;}
+  .skills {padding: 100px 20px 100px !important; margin: 0;}
+  .skills-title {margin: 0;}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  ul {margin: 0;}
+  .introduction {padding: 100px 20px 100px !important; margin: 0 30%;}
+  .skills {margin: 0 10%;}
+  .skills-title {margin: 60px;}
 }
