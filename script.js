@@ -21,9 +21,6 @@ window.onload = function() {
 //variable for counting past Genesis block
 let block = 1;
 
-//previous hash set to 0 by default
-prevHash.value = 0;
-
 //holds previous hash values, defaulted to null in the event Add Block is pressed before current block is mined
 let encryptArr = [null];
 
