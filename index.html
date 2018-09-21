@@ -1,47 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
 
-<!--navigation start-->
-    <nav class="navbar">
-      <div class="container">
-          <ul class="nav-links">
-            <li>
-              <a href="#">Link</a>
-            </li>
-            <li>
-              <a href="#">Text</a>
-            </li>
-            <li>
-              <a href="#">More Text</a>
-            </li>
-          </ul>
-      </div>
-      </nav>
-<!--navigation end-->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Blockchain Demonstration">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Brittani Gongre">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Blockchain Demo</title>
+</head>
 
-      <header class="box">
-        <div class="box-border">
-          <div class="name-text">
-            <h1>Name Placeholder</h1>
+<body>
+  <header>
+    <h1>BLOCKCHAIN</h1>
+  </header>
+
+  <div class="">
+    <button id='add-button' type="button" name="button">add block</button>
+  </div>
+
+<section>
+  <div class='container'>
+    <div id="box-wrapper">
+      <div class="box">
+        <div class="block-box">
+          <div class="flex-test">
+            <button class='data-button' type="button" name="data" disabled>DATA</button>
+            <input id='data-input' type="text" name="data" placeholder="Enter Text To Encrypt">
           </div>
-<<<<<<< HEAD
-        </div>
-      </header>
-
-<!--about me start -->
-    <section class="hero">
-      <div class="container">
-        <div class="columns">
-          <div class="introduction-column">
-            <h1 class="text-centered">Nice to meet you</h1>
-            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
-=======
           <div class="flex-test">
             <p class="nonce-title">Nonce</p>
             <input id='nonce-info' type='text' name='nonce' disabled>
@@ -53,99 +42,27 @@
           <div class="flex-test">
               <p class="hash-title">Hash</p>
               <input id='hash-info' type="text" name="hash" disabled>
->>>>>>> 174a36a7225367ca4436fd51d91aff4937f39a52
           </div>
+          <div class="bottom-flex">
+            <h3 id='block-txt'>Genesis Block</h3>
+            <button id='mine-button'><i class="fas fa-lock fa-md"> ENCRYPT</i></button>
+          </div>
+            <h6 id='date'></h6>
         </div>
       </div>
-    </section>
-<!--about me end-->
-
-<!--project-grid start-->
-    <section class="project-section">
-        <div class="project-grid">
-          <div class="columns multiline">
-            <div class="column">
-              <figure>
-                <img src="test-image.jpg" alt="">
-                <figcaption>
-                  <!-- <h1>Some text goes here</h1> -->
-                  <!-- <a href="#"></a> -->
-                </figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure>
-                <img src="house-pic.jpg" alt="">
-                <figcaption>
-                  <!-- <h1>Some text</h1> -->
-                  <!-- <a href="#"></a> -->
-                </figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure>
-                <img src="subway-pic.jpg" alt="">
-                <figcaption>
-                  <!-- <h1>some text</h1> -->
-                  <!-- <a href="#"></a> -->
-                </figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure>
-                <img src="swing-pic.jpg" alt="">
-                <figcaption>
-                  <!-- <h1>some text</h1> -->
-                  <!-- <a href="#"></a> -->
-                </figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure>
-                <img src="swing-pic.jpg" alt="">
-                <figcaption>
-                  <!-- <h1>some text</h1> -->
-                  <!-- <a href="#"></a> -->
-                </figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure>
-                <img src="swing-pic.jpg" alt="">
-                  <figcaption>
-                    <!-- <h1>some text</h1> -->
-                    <!-- <a href="#"></a> -->
-                  </figcaption>
-              </figure>
-            </div>
-          </div>
-          </div>
-    </section>
-<!--project-grid end-->
-
-<!--skills start-->
-  <section>
-    <div class="">
-
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <div class="">
 
-<<<<<<< HEAD
-    </div>
-  </footer>
-=======
-<div class="particles">
+
+
+<!-- <div class="particles">
   <canvas class='background'></canvas>
-</div>
+</div> -->
   <script type="text/javascript" src="bower_components/crypto-js/crypto-js.js"></script>
   <script type="text/javascript" src='script.js'></script>
   <script src="./particles.js-master/particles.js-master/dist/particles.min.js"></script>
 </body>
->>>>>>> 174a36a7225367ca4436fd51d91aff4937f39a52
 
-    <script type="text/javascript" src="script.js"></script>
-  </body>
 </html>
