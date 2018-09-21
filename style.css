@@ -184,7 +184,7 @@ button {
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
   #box-wrapper {width: 85%;}
-  #mine-button {margin-left: 6rem;}
+  #mine-button {margin-left: 1rem;}
   #hash-info {font-size: 12px;}
   #p-hash {font-size: 10px;}
 }
@@ -199,8 +199,8 @@ button {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 992px) {
-  #box-wrapper {width:80%;}
-  #mine-button {margin-left: 32rem;}
+  #box-wrapper {width:60%;}
+  #mine-button {margin-left: 15rem;}
   #hash-info {font-size: 15px;}
   #p-hash {font-size: 13px;}
 
@@ -209,7 +209,7 @@ button {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1200px) {
   #box-wrapper {width: 60%;}
-  #mine-button {margin-left: 27rem;}
+  #mine-button {margin-left: 15rem;}
   #hash-info {font-size: 14.5px;}
   #p-hash {font-size: 13px;}
 }
@@ -217,7 +217,7 @@ button {
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   #box-wrapper {width: 40%;}
-  #mine-button {margin-left: 30rem;}
+  #mine-button {margin-left: 20rem;}
   #hash-info {font-size: 14.5px;}
   #p-hash {font-size: 13px;}
 }
