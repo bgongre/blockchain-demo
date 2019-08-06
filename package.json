@@ -17,22 +17,11 @@
   },
   "homepage": "https://github.com/bgongre/blockchain-demo#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "atob": "^2.1.0",
-    "extend": "^3.0.2",
-    "lodash": "^4.17.15",
-    "lodash.merge": "^4.6.2",
-    "lodash.template": "^4.5.0",
-    "mem": "^4.0.0",
-    "minimatch": "^3.0.2",
-    "randomatic": "^3.0.0"
-=======
     "atob": "^2.1.2",
     "extend": ">=3.0.2",
     "lodash": "4.17.13",
     "mem": "^5.1.1",
     "minimatch": "^3.0.4",
     "randomatic": "^3.1.1"
->>>>>>> bdf2f1d0bbee44c15498272e18d8ccb029edc6ea
   }
 }
