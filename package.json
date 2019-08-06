@@ -18,8 +18,8 @@
   "homepage": "https://github.com/bgongre/blockchain-demo#readme",
   "dependencies": {
     "atob": "^2.1.2",
-    "extend": "^3.0.2",
-    "lodash": "^4.17.15",
+    "extend": ">=3.0.2",
+    "lodash": "4.17.13",
     "mem": "^5.1.1",
     "minimatch": "^3.0.4",
     "randomatic": "^3.1.1"
