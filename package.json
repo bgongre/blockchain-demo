@@ -1,0 +1,19 @@
+{
+  "name": "blockchain-demo",
+  "version": "1.0.0",
+  "description": "This project was made using HTML, CSS, and JS.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgongre/blockchain-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgongre/blockchain-demo/issues"
+  },
+  "homepage": "https://github.com/bgongre/blockchain-demo#readme"
+}
